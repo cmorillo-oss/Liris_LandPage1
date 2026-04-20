@@ -1,0 +1,167 @@
+/* selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* selector por etiqueta */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #222;
+}
+
+/* selector por id */
+#inicio {
+  background: tomato;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 4px solid darkred;
+}
+
+/* display flex */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: relative; /* para absolute */
+  border: 2px solid #333;
+  margin: 20px;
+}
+
+/* selector por clase */
+.texto {
+  width: 70%;
+}
+
+button {
+  display: block; /* display block */
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: gold;
+  cursor: pointer;
+}
+
+/* position absolute */
+.oferta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: crimson;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  animation: mover 2s infinite alternate;
+}
+
+/* position fixed */
+.boton-fijo {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+#menu {
+  padding: 30px;
+}
+
+/* display grid */
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+
+/* first-child */
+.card:first-child {
+  border-color: red;
+}
+
+/* last-child */
+.card:last-child {
+  border-color: blue;
+}
+
+/* nth-child */
+.card:nth-child(2) {
+  background: #ffe5b4;
+}
+
+.card:nth-child(3) {
+  background: #dff7df;
+}
+
+/* display none */
+.oculto {
+  display: none;
+}
+
+/* flex otra vez */
+.info {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+.bloque {
+  flex: 1;
+  background: orange;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid darkorange;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* keyframes */
+@keyframes mover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto {
+    width: 100%;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+}
