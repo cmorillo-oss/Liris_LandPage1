@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Landing</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Real | Comida Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <a href="#menu" class="boton-fijo">Menú</a>
+    <header class="hero">
+        <div class="container">
+            <span class="badge">NUEVO MENÚ DISPONIBLE</span>
+            <h1>El sabor auténtico que estabas buscando</h1>
+            <p>Ingredientes frescos de la granja a tu mesa. Disfruta de la mejor experiencia gastronómica desde la comodidad de tu casa.</p>
+            <div class="hero-btns">
+                <a href="menu.html" class="btn btn-primary">Ver Menú</a>
+                <a href="pedido.html" class="btn btn-secondary">Hacer Pedido</a>
+            </div>
+        </div>
+    </header>
 
-  <header id="inicio">
-    <h1>Food House</h1>
-    <p>Comida rápida y deliciosa</p>
-  </header>
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir Sabor Real?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🥗</div>
+                    <h3>Ingredientes Orgánicos</h3>
+                    <p>Trabajamos con productores locales para garantizar frescura total.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h3>Envío Ultra Rápido</h3>
+                    <p>Tu comida llega caliente y en menos de 30 minutos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">👨‍🍳</div>
+                    <h3>Chef Profesional</h3>
+                    <p>Recetas únicas diseñadas para sorprender a tu paladar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="hero">
-    <div class="texto">
-      <h2>Las mejores hamburguesas</h2>
-      <p>Practica CSS con una landing page de comida.</p>
-      <button>Ordenar</button>
-    </div>
-    <div class="oferta">20% OFF</div>
-  </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo-content">
+                <h2>La Especialidad de la Casa</h2>
+                <p>Prueba nuestra **Burger Supreme**: Doble carne premium, queso fundido y nuestra salsa secreta. Solo este fin de semana.</p>
+                <span class="price">Por solo $12.99</span>
+                <br><br>
+                <a href="pedido.html" class="btn btn-primary">Pedir Ahora</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="menu">
-    <h2>Menú</h2>
-    <div class="contenedor-cards">
-      <article class="card">
-        <h3>Hamburguesa</h3>
-        <p>Carne, queso y papas.</p>
-      </article>
+    <section class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen nuestros comensales</h2>
+            <p class="quote">"La mejor hamburguesa que he probado en años. El servicio de delivery es impecable y la presentación, de diez."</p>
+            <p class="author">— Carlos Ruiz, Food Critic</p>
+        </div>
+    </section>
 
-      <article class="card">
-        <h3>Pizza</h3>
-        <p>Queso extra y pepperoni.</p>
-      </article>
-
-      <article class="card">
-        <h3>Tacos</h3>
-        <p>Carne, salsa y vegetales.</p>
-      </article>
-
-      <article class="card oculto">
-        <h3>Bebida</h3>
-        <p>Esta card está oculta.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="info">
-    <div class="bloque">Rápido</div>
-    <div class="bloque">Rico</div>
-    <div class="bloque">Casero</div>
-  </section>
-
-  <footer>
-    <p>Food House 2026</p>
-  </footer>
+    <footer class="footer">
+        <div class="container">
+            <h2>¿Tienes hambre?</h2>
+            <p>No esperes más, pide tu plato favorito ahora mismo.</p>
+            <div class="contact-info">
+                <p>📍 Calle Gourmet 123, Ciudad Sabor</p>
+                <p>📞 +593 99082 2658</p>
+            </div>
+            <p class="copyright">© 2026 Sabor Real. Hecho con ❤️ para amantes de la comida.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
